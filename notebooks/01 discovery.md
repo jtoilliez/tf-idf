@@ -148,7 +148,7 @@ top_n
 We are going to use the `CountVectorizer` sparse matrix produced earlier, and we're going to capture the IDF quantity.
 
 ```python
-from sklearn.feature_extraction.text import TfidfTransformer
+from sklearn.feature_extraction.text import TfidfTransformer, TfidfVectorizer
 ```
 
 ```python
@@ -191,20 +191,3 @@ top_n
 ```
 
 Here we can map back the TF-IDF from each word in this test document, based on the vocabulary established in the corpus, and using the TF-IDF statistic computed from that test document on the basis of the corpus. These are the words that really "pop" based on the corpus. We note that it's important to analyze that particular item against the rest of the corpus. Otherwise, it's not as meaningful (e.g. a medical corpus, and an item about football would probably pop).
-
-```python
-top_n
-```
-
-```python
-print(
-    {
-        "I analyzed" : doc,
-        "I got these keywords" : top_n
-    }
-)
-```
-
-```python
-
-```
