@@ -1,0 +1,13 @@
+# base
+numpy
+pandas
+sklearn
+nltk
+pypdf2
+python-docx
+
+# development
+flake8
+black
+jupytext
+jupyterlab
